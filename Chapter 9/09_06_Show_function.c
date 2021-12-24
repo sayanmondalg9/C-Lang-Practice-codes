@@ -14,6 +14,7 @@ void show(struct employe emp)
     printf("The name of employe is : %s\n", emp.name);
     emp.id = 56;// I have to use pointer to change the value in main()
 }
+
 int main()
 {
     struct employe no1;
