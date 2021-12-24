@@ -19,8 +19,8 @@ int main()
    printf("How many array you want : ");
    scanf("%d", &m);
    printf("Enter the lenght of your array : ");
-   scanf("%d", &n);
    int multable[m][n];
+   scanf("%d", &n);
    for (int i = 0; i < m; i++)
    {
       printf("Enter a number to print multiplication table : ");
