@@ -1,5 +1,5 @@
 /*
-Q5. Write a program with a structure representing a 
+Q5. Write a program with a structure representing a
 complex number.
 */
 #include <stdio.h>
@@ -7,20 +7,21 @@ complex number.
 struct complex
 {
     float a;
-    float b;
+    int b;
 };
+
+void display(struct complex com)
+{
+    printf("The real number is %.2f\nThe imaginary part is i(%d)\n", com.a, com.b);
+    printf("The complex number is %.2f + i(%d)", com.a, com.b);
+}
+
 int main()
 {
-    struct complex com1, com2, sum;
-    com1.a = 5;
-    com1.b = 6;
+    struct complex comnum;
+    comnum.a = 5;
+    comnum.b = 6;
+    display(comnum);
 
-    com2.a = 56;
-    com2.b = 65;
-
-    sum.a = com1.a+com2.a;
-    sum.b = com1.b+com2.b;
-
-    printf("(%.2f + %.2fi) + (%.2f + %.2fi) = %.2f + %.2fi", com1.a,com1.b,com2.a,com2.b,sum.a,sum.b);
     return 0;
 }
