@@ -1,0 +1,2 @@
+the number  is 56
+thanks for using fprintf
